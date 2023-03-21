@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>ISC Lights</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+          crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+    <script src="{{url_for('static', filename='js/safe.js')}}"></script>
+
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container">
+        <h1>ISC Lights</h1>
+    </div>
+</header>
+
+<main class="main">
+
+    <section class="led-container">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-2">
+                    <div class="led green big"></div>
+                </div>
+                <div class="col-md-2">
+                    <div class="led yellow big"></div>
+                </div>
+                <div class="col-md-2">
+                    <div class="led red big"></div>
+                </div>
+                <div class="col-md-2">
+                    <div class="led blue big"></div>
+                </div>
+                <div class="col-md-2">
+                    <div class="led gray big"></div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-2">
+                    <div class="led green"></div>
+                </div>
+                <div class="col-md-2">
+                    <div class="led yellow"></div>
+                </div>
+                <div class="col-md-2">
+                    <div class="led red"></div>
+                </div>
+                <div class="col-md-2">
+                    <div class="led blue"></div>
+                </div>
+                <div class="col-md-2">
+                    <div class="led gray"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="table-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <table class="table table-striped">
+                        <thead>
+                          <form action="/animation/" method="post"></form>
+                            <tr>
+                                <th>Name</th>
+                                <th>Effect</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Wave</td>
+                                <td>Alternating blue waveforms</td>
+                                <td><button class="btn btn-primary">Try</button></td>
+                            </tr>
+                            <tr>
+                                <td>Rainbow</td>
+                                <td>Displays rainbow colors along the whole strip</td>
+                                <td><button class="btn btn-primary" name="rainbow" type="submit">Try</button></td>
+                            </tr>
+                            <tr>
+                                <td>Blink</td>
+                                <td>A dot moves from start to the finish place</td>
+                                <td><button class="btn btn-primary">Try</button></td>
+                            </tr>
+                            <tr>
+                                <td>Custom Animation</td>
+                                <td>___</td>
+                                <td><button class="btn btn-primary">Try</button></td>
+                            </tr>
+                          </form>
+                            <tr>
+                              <td>Solid color</td>
+                              <td>All LEDs will become one specific color</td>
+                              <form action="/solid/" method="post"></form>
+                              <td>
+                                <button class="btn btn-primary button-block" name="blue" type="submit">Blue</button>
+                                <button class="btn btn-primary button-block" name="red" type="submit">Red</button>
+                                <button class="btn btn-primary button-block" name="green" type="submit"">green</button>
+                              </td>
+                  </form>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-md-4">
+            <div class="content-section">
+              <h3>Custom code:</h3>
+              <textarea id="code-input" rows="2" cols="15"></textarea>
+              <br><br>
+              <ul class="list-group">
+                <div class="col-sm-4 btn-group-vertical" role="group">
+                  <button type="button" name ="On" class="btn btn-primary active">On</button>
+                  <button type="button" name = "Off" class="btn btn-primary disabled">Off</button>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+

@@ -1,0 +1,137 @@
+
+body {
+    font-family: 'Mynerve', cursive;
+    background-color: #f2f2f2;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 2px 2px #000;
+  }
+  
+  .button-block {
+    display: block;
+  }
+
+  /* Style the navigation menu */
+  .navbar {
+    background-color: #333;
+  }
+  
+  /* Style the links in the navigation menu */
+  .navbar a {
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  /* Style the active link in the navigation menu */
+  .navbar a.active {
+    background-color: #555;
+  }
+
+  .button-block {
+    display: block;
+  }
+  
+
+  h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  
+
+  .led {
+    margin: 10px auto;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 1px 0px #000, inset 0px 0px 6px 2px #bbb;
+    display: inline-block;
+  }
+  
+  .led.green {
+    background-color: #6eb300;
+  }
+  
+  .led.yellow {
+    background-color: #b3a000;
+  }
+  
+  .led.red {
+    background-color: #b30600;
+  }
+  
+  .led.blue {
+    background-color: #004ab3;
+  }
+  
+  .led.gray {
+    background-color: rgba(40, 40, 40, 0.75);
+  }
+  
+  .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Style the form */
+  .form {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 50px;
+    box-shadow: 0px 0px 6px 2px #bbb;
+  }
+  
+  /* Style the form labels */
+  .form label {
+    font-size: 20px;
+  }
+  
+  /* Style the form input fields */
+  .form input[type=text] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the form submit button */
+  .form input[type=submit] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  #canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
